@@ -14,3 +14,6 @@ radio.onReceivedNumber(function (receivedNumber) {
     }
 })
 radio.setGroup(9)
+basic.forever(function () {
+    basic.showNumber(radio.receivedPacket(RadioPacketProperty.SignalStrength))
+})
