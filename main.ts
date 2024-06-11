@@ -9,8 +9,8 @@ radio.onReceivedNumber(function (receivedNumber) {
         pins.servoWritePin(AnalogPin.P2, 180)
     }
     if (receivedNumber == 3) {
-        pins.servoWritePin(AnalogPin.P1, 0)
-        pins.servoWritePin(AnalogPin.P2, 180)
+        pins.servoWritePin(AnalogPin.P1, 90)
+        pins.servoWritePin(AnalogPin.P2, 90)
     }
 })
 radio.setGroup(9)
